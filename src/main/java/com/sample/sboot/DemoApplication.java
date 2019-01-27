@@ -1,4 +1,4 @@
-package com.sample.model;
+package com.sample.sboot;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
