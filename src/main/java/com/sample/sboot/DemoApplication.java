@@ -1,5 +1,7 @@
 package com.sample.sboot;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -13,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class DemoApplication {
+	
+	private static final Logger logger = LoggerFactory.getLogger(DemoApplication.class);
 	
 	@Autowired
 	private Environment env;
@@ -39,6 +43,9 @@ public class DemoApplication {
     }
 
     public static void main(String[] args) throws Exception {
+    	logger.info("logger.info");
+    	logger.warn("logger debug");
+    	logger.error("logger error");
         SpringApplication.run(DemoApplication.class, args);
     }
 }

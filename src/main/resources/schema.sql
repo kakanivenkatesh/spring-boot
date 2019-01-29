@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS openposition;
+CREATE TABLE dog (
+  id INT NOT NULL AUTO_INCREMENT,
+  skill VARCHAR(100) NOT NULL,
+  requireddate DATE NOT NULL,
+  experience INT(2) NOT NULL,
+  PRIMARY KEY (id));
